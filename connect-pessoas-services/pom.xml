@@ -8,8 +8,8 @@
 		<artifactId>connect</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>connect-pessoas</artifactId>
-	<name>connect-pessoas</name>
+	<artifactId>connect-pessoas-services</artifactId>
+	<name>connect-pessoas-services</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>

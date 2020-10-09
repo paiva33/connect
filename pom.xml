@@ -41,7 +41,8 @@
 	</dependencies>
 
 	<modules>
-		<module>connect-pessoas</module>
+		<module>connect-pessoas-services</module>
+		<module>connect-clientes-services</module>
 		<module>connect-seguranca</module>
 		<module>connect-application</module>
 	</modules>
