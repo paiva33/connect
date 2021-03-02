@@ -1,4 +1,4 @@
-package br.com.connect.pessoas;
+package br.com.connect.pessoas.service.dto;
 
 import java.time.LocalDate;
 
@@ -14,7 +14,7 @@ import lombok.Setter;
 
 @Getter
 @Setter
-public class PessoaForm {
+public class EntradaPessoaDTO {
 
 	@NotBlank
 	private String nome;

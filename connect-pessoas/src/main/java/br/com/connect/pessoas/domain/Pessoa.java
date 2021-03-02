@@ -1,4 +1,4 @@
-package br.com.connect.pessoas;
+package br.com.connect.pessoas.domain;
 
 import java.io.Serializable;
 import java.time.LocalDate;
