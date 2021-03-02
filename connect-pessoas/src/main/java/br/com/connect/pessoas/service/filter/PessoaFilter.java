@@ -1,4 +1,4 @@
-package br.com.connect.pessoas;
+package br.com.connect.pessoas.service.filter;
 
 import java.time.LocalDate;
 

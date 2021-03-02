@@ -1,9 +1,16 @@
-package br.com.connect.pessoas;
+package br.com.connect.pessoas.service;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import br.com.connect.pessoas.domain.Pessoa;
+import br.com.connect.pessoas.repository.PessoaRepository;
+import br.com.connect.pessoas.service.assembler.PessoaAssembler;
+import br.com.connect.pessoas.service.dto.EntradaPessoaDTO;
+import br.com.connect.pessoas.service.dto.SaidaPessoaDTO;
+import br.com.connect.pessoas.service.filter.PessoaFilter;
+import br.com.connect.pessoas.service.specs.PessoaSpecs;
 import lombok.RequiredArgsConstructor;
 
 @Service
@@ -18,7 +25,7 @@ public class PessoaService {
 		return pessoaRepository.findAll(PessoaSpecs.withFilter(filter), pageable);
 	}
 
-	public PessoaDTO save(PessoaForm pessoaForm) {
+	public SaidaPessoaDTO save(EntradaPessoaDTO pessoaForm) {
 		Pessoa pessoa = pessoaAssembler.toEntity(pessoaForm);
 		pessoa = pessoaRepository.save(pessoa);
 		return pessoaAssembler.toDTO(pessoa);

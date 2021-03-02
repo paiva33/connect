@@ -1,4 +1,4 @@
-package br.com.connect.pessoas;
+package br.com.connect.pessoas.service.dto;
 
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -11,12 +11,12 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * A DTO for the {@link com.mycompany.myapp.domain.Pessoa} entity.
+ * A DTO for the {@link br.com.connect.pessoas.domain.mycompany.myapp.domain.Pessoa} entity.
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class PessoaDTO implements Serializable {
+public class SaidaPessoaDTO implements Serializable {
 
 	/**
 	 * 
